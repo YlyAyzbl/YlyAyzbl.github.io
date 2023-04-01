@@ -1,0 +1,286 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>miaolme - maomao</title><meta name="author" content="xingli,2332503185@qq.com"><meta name="copyright" content="xingli"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="技术分享博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="miaolme">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="miaolme">
+<meta property="og:description" content="技术分享博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://files.catbox.moe/8genlp.png">
+<meta property="article:author" content="xingli">
+<meta property="article:tag" content="技术|linux|编程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://files.catbox.moe/8genlp.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'miaolme',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-04-01 15:07:48'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://files.catbox.moe/8genlp.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友联</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://files.catbox.moe/hc9pyn.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="miaolme"><span class="site-name">miaolme</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友联</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">miaolme</h1><div id="site_social_icons"><a class="social-icon" href="https://github.com/YlyAyzbl" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2332503185@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2023/04/01/linux/github%E4%B8%8A%E4%BC%A0%E6%8F%90%E4%BA%A4/" title="github上传提交"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="github上传提交"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/01/linux/github%E4%B8%8A%E4%BC%A0%E6%8F%90%E4%BA%A4/" title="github上传提交">github上传提交</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-01T06:29:46.000Z" title="发表于 2023-04-01 14:29:46">2023-04-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">linux</a></span></div><div class="content">告知创建仓库之类的操作大家应该都清楚，我就着重讲下怎么配置token和上传文件吧
+额我发现之前的教程可用，就是git教程，按那个添加秘钥最后在github使用ssh克隆就能提交了
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/04/01/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/obisidian%E7%AC%94%E8%AE%B0/" title="obisidian笔记"><img class="post-bg" src="https://www.hualigs.cn/image/63cbe8f058566.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="obisidian笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/01/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/obisidian%E7%AC%94%E8%AE%B0/" title="obisidian笔记">obisidian笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-01T06:22:39.000Z" title="发表于 2023-04-01 14:22:39">2023-04-01</time></span></div><div class="content">1. 什么是双向链接出链反向链接
+2. 双向链接的类型1、链接到笔记2、链接到标题3、链接到段落（块）4、链接别名5、显示当前链接6、链接到外部
+3. 创建双向链接1、链接到笔记[[笔记名称]]2、链接到标题[[笔记名称#标题]]3、链接到段落（块）[[笔记名称^段落]]4、链接别名[[笔记名称^段落|别名]] [[笔记名称#标题|别名]]5、显示当前链接![[笔记名称^段落]]6、显示当前链接[关键词] (链接）
+4.图谱
+视频详解[bilibili视频详解](由此开始 Obsidian 使用教程 ② 基础设置与双向链接_哔哩哔哩_bilibili)
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/04/01/linux/git%E6%95%99%E7%A8%8B/" title="git教程"><img class="post-bg" src="https://files.catbox.moe/q5buj2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="git教程"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/01/linux/git%E6%95%99%E7%A8%8B/" title="git教程">git教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-01T06:21:47.000Z" title="发表于 2023-04-01 14:21:47">2023-04-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">linux</a></span></div><div class="content">git代理http代理
+git config --global http.proxy http://127.0.0.1:10808 git config --global https.proxy https://127.0.0.1:10808
+
+取消代理
+git config --global --unset http.proxy git config --global --unset https.proxy
+
+scoks代理
+git config --global http.proxy socks5://127.0.0.1:10808 git config --global https.proxy socks5://127.0.0.1:10808
+
+经过本人测试，通过v2ray监听端口对git使用socks代理可以正常加速git的请求
+第一步 下载安装git这个不用教，这个也不会剩下的也看不懂
+第二步 配置git私钥1.初始化自己的用户名和邮箱，命令如下。git config --global user.name “输入你的用户名”git config --global user.e ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/04/01/vue/grid%E5%B8%83%E5%B1%80/" title="grid布局"><img class="post-bg" src="https://files.catbox.moe/14nsmo" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="grid布局"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/01/vue/grid%E5%B8%83%E5%B1%80/" title="grid布局">grid布局</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-01T06:18:31.000Z" title="发表于 2023-04-01 14:18:31">2023-04-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/vue/">vue</a></span></div><div class="content">grid布局教程开启布局.grid &#123;    display: grid;&#125;
+
+特点：grid布局的直接子元素默认是grid元素
+行列控制指定列死宽度
+.grid &#123;  display: grid;  grid-template-columns: 100px 100px 100px; /*设定排列和大小*/&#125;
+
+浮动宽度
+.grid &#123;  display: grid;  grid-template-columns: 1fr 1fr 1fr; /*设定排列和大小*/&#125;
+
+fr是grid特有的浮动宽度,会自动占满剩余空间
+多行列指定
+.grid &#123;    /*相当于输入12个50px 即12列*/	grid-template-columns: repeat(12, 50px);&#125;
+
+指定行.grid &#123;    /*相当于输入12个50px 即12列 原理和行列相同*/ 	grid-template-rows: repeat(12, 50px);&#125;
+
+默认指定
+grid-auto-rows:  ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/04/01/vue/flex%E5%B8%83%E5%B1%80/" title="flex布局"><img class="post-bg" src="https://img.miaolme.com/file/2c319ba0349a962278d63.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="flex布局"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/01/vue/flex%E5%B8%83%E5%B1%80/" title="flex布局">flex布局</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-01T06:17:04.000Z" title="发表于 2023-04-01 14:17:04">2023-04-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/vue/">vue</a></span></div><div class="content">flex布局教程例子#container &#123;    display: flex;    justify-content: center;    margin: 0 auto;     flex-direction: column; /*上下排列*/&#125;#header &#123;    display: flex;    margin: 0 auto;    flex-direction: column; /*上下排列*/    border-bottom: 6px solid gainsboro;&#125;#sidebar &#123;    width: 450px;    text-align: left;    overflow: hidden;    border: 1px solid #FFFFFF;&#125;#menu &#123;    display: flex;    justify-content: end;/*紧贴右侧对齐*/&#125;#footer &#123;    margin: 0 auto;    margin-top: 10p ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/04/01/linux/mysql%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B/" title="mysql高级教程"><img class="post-bg" src="https://files.catbox.moe/ynl2cc.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mysql高级教程"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/01/linux/mysql%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B/" title="mysql高级教程">mysql高级教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-01T06:15:22.000Z" title="发表于 2023-04-01 14:15:22">2023-04-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">linux</a></span></div><div class="content">MySQL基础今日目标：
+
+
+完成MySQL的安装及登陆基本操作
+能通过SQL对数据库进行CRUD
+能通过SQL对表进行CRUD
+能通过SQL对数据进行CRUD
+
+
+登录mysqlmysql -uroot -p 123456
+
+
+
+1，数据库相关概念以前我们做系统，数据持久化的存储采用的是文件存储。存储到文件中可以达到系统关闭数据不会丢失的效果，当然文件存储也有它的弊端。
+假设在文件中存储以下的数据：
+姓名	年龄	性别	住址张三	23	男	北京西三旗李四	24	女	北京西二旗王五	25	男	西安软件新城
+
+现要修改李四这条数据的性别数据改为男，我们现学习的IO技术可以通过将所有的数据读取到内存中，然后进行修改再存到该文件中。通过这种方式操作存在很大问题，现在只有三条数据，如果文件中存储1T的数据，那么就会发现内存根本就存储不了。
+现需要既能持久化存储数据，也要能避免上述问题的技术使用在我们的系统中。数据库就是这样的一门技术。
+1.1  数据库
+&#x3D;&#x3D;存储和管理数据的仓库，数据是有组织的进行存储。&#x3D;&#x3D;
+
+数据库英文名是 DataBase，简称DB。
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/04/01/linux/mysql%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/" title="mysql基础教程"><img class="post-bg" src="https://files.catbox.moe/ynl2cc.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mysql基础教程"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/01/linux/mysql%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/" title="mysql基础教程">mysql基础教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-01T06:14:17.000Z" title="发表于 2023-04-01 14:14:17">2023-04-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">linux</a></span></div><div class="content">MySQL基础今日目标：
+
+
+完成MySQL的安装及登陆基本操作
+能通过SQL对数据库进行CRUD
+能通过SQL对表进行CRUD
+能通过SQL对数据进行CRUD
+
+
+登录mysqlmysql -uroot -p 123456
+
+
+
+1，数据库相关概念以前我们做系统，数据持久化的存储采用的是文件存储。存储到文件中可以达到系统关闭数据不会丢失的效果，当然文件存储也有它的弊端。
+假设在文件中存储以下的数据：
+姓名	年龄	性别	住址张三	23	男	北京西三旗李四	24	女	北京西二旗王五	25	男	西安软件新城
+
+现要修改李四这条数据的性别数据改为男，我们现学习的IO技术可以通过将所有的数据读取到内存中，然后进行修改再存到该文件中。通过这种方式操作存在很大问题，现在只有三条数据，如果文件中存储1T的数据，那么就会发现内存根本就存储不了。
+现需要既能持久化存储数据，也要能避免上述问题的技术使用在我们的系统中。数据库就是这样的一门技术。
+1.1  数据库
+&#x3D;&#x3D;存储和管理数据的仓库，数据是有组织的进行存储。&#x3D;&#x3D;
+
+数据库英文名是 DataBase，简称DB。
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/04/01/linux/mysql%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E6%95%99%E7%A8%8B/" title="mysql导入数据库教程"><img class="post-bg" src="https://files.catbox.moe/i3rz8i.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mysql导入数据库教程"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/01/linux/mysql%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E6%95%99%E7%A8%8B/" title="mysql导入数据库教程">mysql导入数据库教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-01T06:12:30.000Z" title="发表于 2023-04-01 14:12:30">2023-04-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">linux</a></span></div><div class="content">基本增删查导入数据库代码:
+登录
+mysql -u root -p 123456
+
+建库
+CREATE DATABASE book7 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+删数据库
+drop database book7;
+
+导库
+mysql -u [用户名] -p [数据库名] &lt; E:\books7.sql
+
+mysql -u root -p book7 &lt; E:\books7.sql
+
+修改适配低版本mysqlERROR 1273 (HY000) at line 25: Unknown collation: &#x27;utf8mb4_0900_ai_ci&#x27; 
+
+该错误通常是因为您正在尝试将使用MySQL 8.0版本新的utf8mb4_0900_ai_ci排序规则的数据库转移到旧版本MySQL或MariaDB服务器中。
+解决此问题的方法是将排序规则更改为旧版本支持的排序规则。请按照以下步骤操作：
+
+打开 E:\books7.sql 文件并搜索 utf8mb4_0900_ai_ci。
+将所有出 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/04/01/linux/CC%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB%E7%9A%84%E7%89%B9%E7%82%B9%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E9%98%B2%E5%BE%A1CC%E6%94%BB%E5%87%BB/" title="CC网络攻击的特点以及如何防御CC攻击"><img class="post-bg" src="https://img.miaolme.com/file/5fce2e7e61c8c8022a0d9.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CC网络攻击的特点以及如何防御CC攻击"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/01/linux/CC%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB%E7%9A%84%E7%89%B9%E7%82%B9%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E9%98%B2%E5%BE%A1CC%E6%94%BB%E5%87%BB/" title="CC网络攻击的特点以及如何防御CC攻击">CC网络攻击的特点以及如何防御CC攻击</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-01T06:10:55.000Z" title="发表于 2023-04-01 14:10:55">2023-04-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">linux</a></span></div><div class="content">什么是CC攻击？CC攻击英文翻译为Challenge Collapsar，是DDOS攻击的一种，是目前最常见的网络攻击方式之一。主要是针对Web服务的第7层协议启动的攻击，通过端口扫描程序在Internet上搜索匿名HTTP代理或SOCKS代理向目标发起HTTP请求。CC攻击因其见效快、成本低、难追踪，受到大量黑客的喜爱。当我们网站遭到CC攻击的时候该怎么办呢？今天墨者安全就来简单说说CC攻击有哪些特点以及如何防御CC攻击？
+CC网络攻击的特点以及如何防御CC攻击
+一、CC攻击有哪些特点？
+1.CC攻击的请求都是模拟真实的有效请求，所以不能被拒绝；
+2.用来发起CC攻击的IP都是真实而分散的，所以很难溯源；
+3.CC攻击的数据包都是模拟真实用户的正常数据包；
+4.CC攻击一般是针对网页攻击，服务器可以连接，ping没问题，但网页无法访问。
+二、CC攻击如何防御？
+1.使用Session 来执行访问计数器：
+使用Session为每个IP创建页面访问计数器或文件下载计数器，防止用户频繁刷新页面，导致频繁读取数据库或频繁下载文件以生成大量流量。 （文件下载不应直接使用下载地址，以便在服务器代 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/04/01/linux/vps%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%B4%AD%E4%B9%B0%E5%BB%BA%E8%AE%AE/" title="vps服务器购买建议"><img class="post-bg" src="https://img.miaolme.com/file/896bb0ee05f416c11bb75.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vps服务器购买建议"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/01/linux/vps%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%B4%AD%E4%B9%B0%E5%BB%BA%E8%AE%AE/" title="vps服务器购买建议">vps服务器购买建议</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-01T06:09:29.000Z" title="发表于 2023-04-01 14:09:29">2023-04-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">linux</a></span></div><div class="content">mjj某人感受.netcup idc.wiki  斯巴达 CC 咸鱼云 不错 当然还有 搬瓦工的 .  RN也还行.Voll 是我用的最久但是比较低调的.毁誉参半:HH,绿云,V.PS垃圾:vmshell,virmach,pr——-DeepL translate———-My own feelings, only personal feelings.
+netcup idc.wiki Spartan CC  SaltfishCloud is good, and of course, there is also the tile maker. RN is also okay.
+Voll is the one I’ve used for the longest time, but it’s relatively low profile.
+Mixed reviews:
+HH, Green Cloud, V.PS
+Garbage:
+vmshell,virmach,pr
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://files.catbox.moe/8genlp.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">xingli</div><div class="author-info__description">技术分享博客</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/YlyAyzbl"><i class="fab fa-github"></i><span>查看 github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/YlyAyzbl" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2332503185@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">我是xingli,一个喜欢猫娘的大学生。<br> 这个博客我用于学习交流用途来搭建。<br>因为网上例如csdn很难找到实用教程，我会把我所学到的知识告诉大家！</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/04/01/linux/github%E4%B8%8A%E4%BC%A0%E6%8F%90%E4%BA%A4/" title="github上传提交"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="github上传提交"/></a><div class="content"><a class="title" href="/2023/04/01/linux/github%E4%B8%8A%E4%BC%A0%E6%8F%90%E4%BA%A4/" title="github上传提交">github上传提交</a><time datetime="2023-04-01T06:29:46.000Z" title="发表于 2023-04-01 14:29:46">2023-04-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/01/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/obisidian%E7%AC%94%E8%AE%B0/" title="obisidian笔记"><img src="https://www.hualigs.cn/image/63cbe8f058566.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="obisidian笔记"/></a><div class="content"><a class="title" href="/2023/04/01/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/obisidian%E7%AC%94%E8%AE%B0/" title="obisidian笔记">obisidian笔记</a><time datetime="2023-04-01T06:22:39.000Z" title="发表于 2023-04-01 14:22:39">2023-04-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/01/linux/git%E6%95%99%E7%A8%8B/" title="git教程"><img src="https://files.catbox.moe/q5buj2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="git教程"/></a><div class="content"><a class="title" href="/2023/04/01/linux/git%E6%95%99%E7%A8%8B/" title="git教程">git教程</a><time datetime="2023-04-01T06:21:47.000Z" title="发表于 2023-04-01 14:21:47">2023-04-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/01/vue/grid%E5%B8%83%E5%B1%80/" title="grid布局"><img src="https://files.catbox.moe/14nsmo" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="grid布局"/></a><div class="content"><a class="title" href="/2023/04/01/vue/grid%E5%B8%83%E5%B1%80/" title="grid布局">grid布局</a><time datetime="2023-04-01T06:18:31.000Z" title="发表于 2023-04-01 14:18:31">2023-04-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/01/vue/flex%E5%B8%83%E5%B1%80/" title="flex布局"><img src="https://img.miaolme.com/file/2c319ba0349a962278d63.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="flex布局"/></a><div class="content"><a class="title" href="/2023/04/01/vue/flex%E5%B8%83%E5%B1%80/" title="flex布局">flex布局</a><time datetime="2023-04-01T06:17:04.000Z" title="发表于 2023-04-01 14:17:04">2023-04-01</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/godot/"><span class="card-category-list-name">godot</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/linux/"><span class="card-category-list-name">linux</span><span class="card-category-list-count">12</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/vue/"><span class="card-category-list-name">vue</span><span class="card-category-list-count">2</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/" style="font-size: 1.1em; color: #999">软件推荐</a> <a href="/tags/godot/" style="font-size: 1.37em; color: #99a4b2">godot</a> <a href="/tags/vue/" style="font-size: 1.23em; color: #999ea6">vue</a> <a href="/tags/linux/" style="font-size: 1.5em; color: #99a9bf">linux</a> <a href="/tags/git/" style="font-size: 1.23em; color: #999ea6">git</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">四月 2023</span><span class="card-archive-list-count">20</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">20</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">29.8k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-04-01T07:07:48.468Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By xingli</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
